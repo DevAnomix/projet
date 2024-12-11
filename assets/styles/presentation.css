@@ -1,0 +1,103 @@
+body { 
+    background-image: url('../images/city.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    color: #E0E0E0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.presentation h1 {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #2C3E50;
+    width: 600px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    background-color: rgba(44, 62, 80, 0.8);
+    margin: 50px auto;
+    font-size: 32px;
+    color: #ECF0F1;
+}
+
+.presentation p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: nowrap;
+    margin-top: 50px;
+    padding: 0 15px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.use, .cve {
+    text-align: center;
+    border: 2px solid #2C3E50;
+    width: 48%;
+    border-radius: 10px;
+    background-color: #34495E;
+    padding: 25px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.use:hover, .cve:hover {
+    background-color: #5D6D7E;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.cve {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.reports {
+    background-color: #2C3E50;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    max-width: 800px;
+    margin: 30px auto;
+    font-family: 'Arial', sans-serif;
+}
+
+.reports h2 {
+    font-size: 24px;
+    color: #ECF0F1;
+    margin-bottom: 10px;
+}
+
+.reports p {
+    font-size: 16px;
+    color: #BDC3C7;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .use, .cve {
+        width: 80%;
+    }
+}

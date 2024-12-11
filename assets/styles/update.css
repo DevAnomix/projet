@@ -6,6 +6,42 @@ body {
     color: #d1d5db;
 }
 
+.home-link {
+    color: #e4e4e7; /* Couleur légèrement plus claire pour un contraste optimal */
+    text-decoration: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px 24px;
+    background-color: #1f1b29; /* Teinte sombre élégante */
+    border-radius: 0 0 15px 15px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    z-index: 1000;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5); /* Ombre plus douce pour un effet moderne */
+}
+
+.home-link a {
+    color: #e4e4e7;
+    text-decoration: none;
+    padding: 10px 16px;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+    background-color: rgba(47, 47, 61, 0.9); /* Fond légèrement translucide pour la profondeur */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.home-link a:hover {
+    color: #5cb0ff; /* Accent rouge rosé moderne */
+    background-color: rgba(92, 168, 255, 0.15); /* Teinte douce en hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6); /* Ombre renforcée en hover */
+}
+
 .profile-picture img {
     width: 250px;
     height: 250px;
@@ -16,6 +52,8 @@ body {
     border: 4px solid #2c2c3e;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    margin-top: 70px;
 }
 
 .profile-picture img:hover {
@@ -98,6 +136,8 @@ body {
     display: block;
     margin: 10px auto;
     border-radius: 30px;
+    height: auto;
+    max-width: 100%;
 }
 
 .dev img:hover {
