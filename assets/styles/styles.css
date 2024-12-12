@@ -7,7 +7,7 @@ body {
 }
 
 .home-link {
-    color: #e4e4e7; /* Couleur légèrement plus claire pour un contraste optimal */
+    color: #e4e4e7; 
     text-decoration: none;
     position: fixed;
     top: 0;
@@ -16,14 +16,14 @@ body {
     justify-content: space-around;
     align-items: center;
     padding: 12px 24px;
-    background-color: #1f1b29; /* Teinte sombre élégante */
+    background-color: #1f1b29;
     border-radius: 0 0 15px 15px;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
     width: 100%;
     z-index: 1000;
     font-size: 18px;
     font-weight: bold;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5); /* Ombre plus douce pour un effet moderne */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5); 
 }
 
 .home-link a {
@@ -32,14 +32,14 @@ body {
     padding: 10px 16px;
     transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
     border-radius: 12px;
-    background-color: rgba(47, 47, 61, 0.9); /* Fond légèrement translucide pour la profondeur */
+    background-color: rgba(47, 47, 61, 0.9); 
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
 }
 
 .home-link a:hover {
-    color: #5cb0ff; /* Accent rouge rosé moderne */
-    background-color: rgba(92, 168, 255, 0.15); /* Teinte douce en hover */
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6); /* Ombre renforcée en hover */
+    color: #5cb0ff; 
+    background-color: rgba(92, 168, 255, 0.15);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
 }
 
 

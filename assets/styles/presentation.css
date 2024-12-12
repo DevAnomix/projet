@@ -1,4 +1,4 @@
-body { 
+body {
     background-image: url('../images/city.jpg');
     background-size: cover;
     background-position: center;
@@ -12,49 +12,91 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    overflow-x: hidden; /* Empêche l'overflow horizontal */
+}
+
+.home-link {
+    color: #e4e4e7;
+    text-decoration: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px 24px;
+    background-color: #1f1b29;
+    border-radius: 0 0 15px 15px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    z-index: 1000;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+    overflow-x: hidden;
+}
+
+.home-link a {
+    color: #e4e4e7;
+    text-decoration: none;
+    padding: 10px 16px;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+    background-color: rgba(47, 47, 61, 0.9);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.home-link a:hover {
+    color: #5cb0ff;
+    background-color: rgba(92, 168, 255, 0.15);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
 }
 
 .presentation h1 {
     text-align: center;
-    margin-top: 30px;
-    padding: 20px;
+    margin: 20px auto;
+    padding: 15px;
     border-radius: 10px;
     border: 2px solid #2C3E50;
-    width: 600px;
+    width: 90%; 
+    max-width: 600px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     background-color: rgba(44, 62, 80, 0.8);
-    margin: 50px auto;
-    font-size: 32px;
+    font-size: 28px; 
     color: #ECF0F1;
+    margin-top: 100px;
 }
 
 .presentation p {
     text-align: center;
-    font-size: 18px;
-    margin-bottom: 30px;
+    font-size: 16px;
+    margin-bottom: 20px;
     font-family: 'Courier New', Courier, monospace;
     color: rgba(255, 255, 255, 0.8);
+    padding: 0 10px;
 }
 
 .container {
     display: flex;
     justify-content: space-between;
-    gap: 30px;
-    flex-wrap: nowrap;
-    margin-top: 50px;
-    padding: 0 15px;
+    gap: 15px; 
+    flex-wrap: wrap; 
+    margin-top: 30px;
+    padding: 0 10px; 
     width: 100%;
     max-width: 1200px;
+    box-sizing: border-box;
 }
 
 .use, .cve {
     text-align: center;
     border: 2px solid #2C3E50;
-    width: 48%;
+    width: 100%; 
+    max-width: 480px; 
     border-radius: 10px;
     background-color: #34495E;
-    padding: 25px;
-    margin-bottom: 30px;
+    padding: 20px;
+    margin: 15px auto; 
     transition: all 0.3s ease-in-out;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
@@ -65,30 +107,54 @@ body {
 }
 
 .cve {
-    margin-top: 50px;
-    margin-left: 50px;
+    margin-top: 20px;
 }
+
+.cve-img {
+    display: none;
+}
+
+@media (min-width: 1025px) {
+    .cve-img {
+        display: block;
+        width: 100%;
+        text-align: center;     
+    }
+}
+
 
 .reports {
     background-color: #2C3E50;
-    padding: 25px;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    width: 90%; 
     max-width: 800px;
-    margin: 30px auto;
+    margin: 20px auto;
     font-family: 'Arial', sans-serif;
 }
 
 .reports h2 {
-    font-size: 24px;
+    font-size: 20px; 
     color: #ECF0F1;
     margin-bottom: 10px;
 }
 
 .reports p {
-    font-size: 16px;
+    font-size: 14px; 
     color: #BDC3C7;
     line-height: 1.6;
+}
+
+
+@media (max-width: 1024px) {
+    .presentation h1 {
+        font-size: 26px;
+    }
+
+    .container {
+        gap: 10px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -98,6 +164,37 @@ body {
     }
 
     .use, .cve {
-        width: 80%;
+        width: 90%;
+    }
+
+    .home-link {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .home-link a {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .presentation h1 {
+        font-size: 22px;
+        padding: 10px;
+    }
+
+    .use, .cve {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    .reports {
+        padding: 15px;
+    }
+
+    .home-link {
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
