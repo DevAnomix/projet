@@ -12,7 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    overflow-x: hidden; /* Empêche l'overflow horizontal */
+    overflow-x: hidden;
 }
 
 .home-link {
